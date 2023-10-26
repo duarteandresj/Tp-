@@ -1,0 +1,36 @@
+.navbar-brand img{
+    height: 4rem;
+}
+.navbar-brand{
+    color: white !important;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+a.text-green {
+    color:green;
+}
+a.nav-link:not(.text-green) {
+    color: white;
+}
+.navbar-nav a.nav-link.active{
+    color: white;
+}
+
+.carousel, .carousel-inner > .carousel-item > img {
+    height: 80vh !important;
+  }
+  .carousel-item > img{
+    object-fit: cover;
+    object-position: center;
+  }
+
+.card{
+    min-width: 250px !important;
+}
+.card-text{
+    font-size: .8rem;
+}
+footer{
+    background: rgb(6, 73, 70) ;
+}
