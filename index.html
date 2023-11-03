@@ -196,7 +196,7 @@
         </div>
       </div>
       <h2 class="fw-bold mb-3 text-dark text-center text-uppercase"><span class="fs-6 text-secondary">Venta</span><br>valor de ticket $200</h2>
-      <div class="mb-3">
+      <form class="mb-3" id="form-tickets">
         <div class="d-flex w-50 m-auto">
           <input type="text" class="form-control w-50 me-3 p-1" id="comprar-nombre" placeholder="Nombre">
           <input type="text" class="form-control w-50 p-1" id="comprar-apellido" placeholder="Apellido">
@@ -205,11 +205,11 @@
         <div class="d-flex w-50 m-auto">
           <div class="mb-3 w-50 m-auto mt-2 p-1">
             <label for="cantidad-tickets" class="form-label w-50">Cantidad</label>
-            <input type="number" class="form-control" id="cantidad-tickets" placeholder="cantidad">
+            <input type="number" class="form-control" id="cantidad-tickets" placeholder="cantidad" required>
           </div>
           <div class="mb-3 w-50 m-auto mt-2 p-1">
             <label class="form-label">Categoria</label>
-            <select class="form-select" aria-label="Default">
+            <select class="form-select" id="form-select" aria-label="Default">
               <option value="estudiante" selected>Estudiante</option>
               <option value="trainee">Trainee</option>
               <option value="junior">Junior</option>
@@ -221,10 +221,10 @@
           <span id="monto-pagar" class="text-danger fw-bold"></span>
         </div>
         
-      </div>
+      </form>
       <div class="w-50 m-auto mb-4 fst-italic d-flex gap-2">
-        <button type="button" class="w-50 btn btn-outline bg-success mt-2 bg-gradient text-white" >Borrar</button>
-        <button type="button" class="w-50 btn btn-outline bg-success mt-2 bg-gradient text-white">Resumen</button>
+        <button type="button" class="w-50 btn btn-outline bg-success mt-2 bg-gradient text-white" id="btn-reset">Borrar</button>
+        <button type="button" class="w-50 btn btn-outline bg-success mt-2 bg-gradient text-white" id="btn-resumen">Resumen</button>
       </div>
     </div>
   </main>
